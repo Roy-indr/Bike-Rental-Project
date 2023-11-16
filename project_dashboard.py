@@ -102,6 +102,7 @@ with st.sidebar:
 #Membuat dataframe main    
 main_df = new_day_df[(new_day_df["dteday"] >= str(start_date)) & (new_day_df["dteday"] <= str(end_date))]
 
+#Membuat dataframe yang diperlukan
 monthly_users_day_df = create_monthly_users_day_df(main_df)
 monthly_users_eleven_day_df = create_monthly_users_eleven_day_df(new_day_df)
 season_users_eleven_day_df = create_season_users_eleven_day_df(new_day_df)
